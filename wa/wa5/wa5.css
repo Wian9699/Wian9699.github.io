@@ -1,0 +1,77 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.score-overlay {
+    height: 100px;
+    width: 800px;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.team1 {
+    padding-left: 10px;
+    background-color: blue;
+}
+
+.team2 {
+    padding-right: 10px;
+    background-color: orange;
+}
+
+.team1 h1{
+    font-family: "Endzone Sans Medium";
+    font-size: 40px;
+    color: white;
+
+}
+.team2 h1{
+    font-family: "Endzone Sans Medium";
+    font-size: 40px;
+    text-align: right;
+    color: white;
+}
+
+.score {
+    font-family: "Endzone Sans Medium";
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+.watermark {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+.watermark p {
+    color: white;
+    font-family: "Endzone Sans Medium";
+    font-size: 20px;
+    text-align: center;
+}
+
+.watermark h1 {
+    font-family: "Endzone Sans Medium";
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
