@@ -1,0 +1,55 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAFD;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-container {
+    font-family: 'Playfair Display', serif; 
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 5px;
+    line-height: 0.9; 
+    text-align: center;
+    padding: 10px;
+
+}
+
+.series-container {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #555; 
+    margin-left: 20px;
+    padding: 10px;
+
+}
+
+.year-container {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    background-color: black;
+    text-align: center;
+    color: #FFFAFD;
+    letter-spacing: 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 100px;
+    font-weight: bold;
+}
