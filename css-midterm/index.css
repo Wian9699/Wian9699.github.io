@@ -1,8 +1,15 @@
 
 body {
+    background-color: #FFFAFD;
     display: flex;
     justify-content: center;
-    background-color: #FFFAFD;
+    background-image: url('./petals1.svg');
+    animation: falling-leaves 120s infinite linear;
+}
+
+@keyframes falling-leaves {
+    0% { background-position: 0 0; }
+    100% { background-position: 20% 20%; }
 }
 
 .container {
@@ -36,10 +43,10 @@ body {
 
 .series-container {
     font-family: 'Playfair Display', serif;
+    color: #555555; 
     font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #555; 
     margin-left: 20px;
     padding: 10px;
 
@@ -123,6 +130,43 @@ body {
     margin: 3px;
 }
 
-.first-performance {
-    position: relative;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.first-performance,
+.second-performance,
+.third-performance,
+.forth-performance,
+.fifth-performance,
+.sixth-performance,
+.seventh-performance,
+.eighth-performance,
+.ninth-performance {
+    box-shadow: 0 0 0 rgba(255, 182, 193, 0);
+    transition: all 0.75s ease;
+    transform: scale(1);
+}
+
+.first-performance:hover,
+.second-performance:hover,
+.third-performance:hover,
+.forth-performance:hover,
+.fifth-performance:hover,
+.sixth-performance:hover,
+.seventh-performance:hover,
+.eighth-performance:hover,
+.ninth-performance:hover {
+    background-color: #FFFAFD;
+    transform: scale(1.03); 
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.5);
+    animation: pulse 2s infinite;
 }
