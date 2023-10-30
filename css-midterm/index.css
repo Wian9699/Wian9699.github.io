@@ -170,3 +170,33 @@ body {
     box-shadow: 0 10px 30px rgba(255, 182, 193, 0.5);
     animation: pulse 2s infinite;
 }
+
+@media (max-width: 400px) {
+    .title-container {
+        flex-direction: column; 
+    }
+
+    .name-container, .series-container {
+        font-size: 30px;  
+        margin: 5px 0;  
+    }
+
+    .year-container {
+        font-size: 20px; 
+        letter-spacing: 10px; 
+        margin-top: 10px;  
+    }
+
+    .performances-container {
+        margin-top: 50px;  
+    }
+
+    .performance-name {
+        font-size: 25px;
+    }
+
+    .performance-artists {
+        font-size: 20px;  
+    }
+
+}
