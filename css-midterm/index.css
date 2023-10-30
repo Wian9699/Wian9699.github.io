@@ -171,7 +171,7 @@ body {
     animation: pulse 2s infinite;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     .title-container {
         flex-direction: column; 
     }
@@ -188,7 +188,8 @@ body {
     }
 
     .performances-container {
-        margin-top: 50px;  
+        margin-top: 50px; 
+         
     }
 
     .performance-name {
@@ -197,6 +198,14 @@ body {
 
     .performance-artists {
         font-size: 20px;  
+    }
+
+    .performance-date {
+        font-size: 25px;
+    }
+
+    .performance-repertoire {
+        font-size: 20px;
     }
 
 }
