@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Javascript ICA 10</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FAFAFA;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ICA10: Interactive Page</h1>
+
+    <p id="change-text"> You can click this text to change it! Give it a try!</p>
+    <div id="change-background"> You can click this text to change the background! Give it a try!</div>
+
+    <script>
+        document.getElementById('change-text').addEventListener('click', function() {
+            this.textContent = "Look! You changed the text!";
+        });
+
+        document.getElementById('change-background').addEventListener('click', function() {
+            document.body.style.backgroundColor = "#001F3F";
+            document.body.style.color = "#FFD700";
+        });
+    </script>
+    
+</body>
+</html>
