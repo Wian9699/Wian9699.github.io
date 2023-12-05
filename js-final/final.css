@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Blackout';
+    src: url('./blackout.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'Harond';
+    src: url('./Harond.otf') format('opentype'),
+}
+
+body {
+    font-size: 100px;
+    font-family: 'Harond', sans-serif;
+}
+
+.slot-machine {
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    display: flex;
+}
+
+.slot-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+.slot {
+    border: 5px solid black;
+    padding: 20px;
+    flex: 1;
+}
+
+.save-button {
+    border: 5px solid black;
+    border-top: 0px;
+    background-color: white;
+}
+
+.slots-button button {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+}
