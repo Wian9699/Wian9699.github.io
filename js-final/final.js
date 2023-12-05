@@ -1,14 +1,34 @@
 //Array for saved numbers.
 let savedNumbers = Array(10).fill(null);
+//Tracks number of attempts on rolling slots.
+let attempts = 0;
 
 //Will randomize the numbers of slots when slots-button is pressed.
 function randomizeNumbers() {
-    for (let i = 1; i <= 10; i++) {
-        let randomNumber = Math.floor(Math.random() * 10);
-        document.getElementById(`slot${i}`).innerText = randomNumber;
+    attempts++;
+
+    if (attempts <= 3) {
+        for (let i = 1; i <= 10; i++) {
+            let randomNumber = Math.floor(Math.random() * 10);
+            document.getElementById(`slot${i}`).innerText = randomNumber;
+        }
     }
+    else {
+        resetMachine();
+    }
+
 }
 
+//When tokens run out this function will reset the game.
+function resetMachine() {
+    savedNumbers = Array(10).fill(null);
+    attempts = 0;
+
+    for (let i = 1; i <= 10; i++) {
+        document.getElementById(`slot${i}`).innerText = '*';
+    }
+
+}
 
 //When save button is pressed this function will save that slot number in the savedNumbers array
 function saveNumber(slotNumber) {

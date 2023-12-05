@@ -7,23 +7,28 @@
     src: url('./Harond.otf') format('opentype'),
 }
 
-body {
+html {
     font-size: 100px;
+
+}
+
+body {
     font-family: 'Harond', sans-serif;
 }
 
 .slot-machine {
     justify-content: center;
     margin: auto;
-    width: 70%;
     display: flex;
 }
 
 .slot-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 10px;
+    padding: 1vw;
+    font-size: .5rem;
 }
 
 .slot {
