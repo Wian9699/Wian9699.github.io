@@ -27,19 +27,15 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1vw;
     font-size: .5rem;
 }
 
 .slot {
-    border: 5px solid black;
     padding: 20px;
     flex: 1;
 }
 
 .save-button {
-    border: 5px solid black;
-    border-top: 0px;
     background-color: white;
 }
 
