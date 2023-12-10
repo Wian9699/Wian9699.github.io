@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Honey';
+    src: url('Honeypirls.otf') format('opentype');
+}
+
+html {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: 'Honey', sans-serif;
+}
+
+.project-title {
+    margin: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-container {
+    margin: auto;
+    width: 90%;
+    height: 50vh;
+}
+
+.number-container {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.number {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    height: 10vh;
+    width: 5vw;
+    margin: .5vw;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.cursor {
+    background-color: black;
+    width: 4vw;
+    height: .6vh;
+    position: absolute;
+    bottom: 1px;
+}
+
+.popup {
+    font-family: 'Roboto Slab', serif;
+    font-size: .75rem;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#popup-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#popup-message input {
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    height: 20px;
+}
+
+#popup-message button {
+    width: 50%;
+    margin: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-size: .75rem;
+    background-color: white;
+    border: 2px solid black;
+
+}
+
+#popup-message button:hover {
+    background-color: black;
+    color: white;
+}
+
+#popup-message p {
+    margin-top: 0;
+}
+
+#submit-answer {
+    font-family: 'Roboto Slab', serif;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#captcha-title {
+    font-size: 1rem;
+}
+
+#popup-message button.button-clicked {
+    background-color: black;
+    color: white;
+    
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
